@@ -30,9 +30,10 @@ body {
     background-color: black;
     border: 1px solid black;
     border-radius: 10%;
+    font-weight: bold;
 }
 
-#style-mode-btn {
+#contact-btn {
     position: absolute;
     top: -50px;
     right: 0;
@@ -49,6 +50,7 @@ body {
 #webpage {
     width: 60vw;
     height: 80vh;
+    box-shadow: 0px 0px 10px black;
 }
 
 /*nav bar styling*/
@@ -219,5 +221,104 @@ footer {
 }
 
 
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
 
+    .page-container {
+        position: relative;
+    }
 
+    /* Adjust the size and position of the mode buttons */
+    .mode-btns {
+      font-size: 0.8rem;
+      padding: 2px;
+    }
+  
+    #contact-btn {
+      top: -100px;
+      right: 10px;
+    }
+  
+    #colour-mode-btn {
+      top: -100px;
+      left: 10px;
+    }
+  
+    /* Adjust the width and height of the webpage div */
+    #webpage {
+      width: 90%;
+      height: 70vh;
+    }
+
+    #right-btn {
+        height: 30px;
+        top: -50px;
+        right: 0;
+        padding: 0;
+        width: 25%;
+    }
+
+    #left-btn {
+        height: 30px;
+        top: -50px;
+        left: 0;
+        padding: 0;
+        width: 25%;
+    }
+  
+    /* Adjust the font size of the nav items */
+    .navContainer .navItem {
+      font-size: 1rem;
+    }
+  
+    /* Adjust the size of the slide buttons */
+    .direction-btn {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+  
+    /* Adjust the margin of the footer */
+    footer {
+        position: absolute;
+        bottom: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer p {
+        margin-bottom: 10px;
+    }
+
+    #mine-linker {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+  
+    /* Adjust the margin of the text container */
+    .text-container {
+      margin-top: 50px;
+    }
+  
+    /* Adjust the font size of the homepage text */
+    #homepage-content-container .text-container h1 {
+      font-size: 40px;
+    }
+  
+    #homepage-content-container .text-container p {
+      font-size: 16px;
+    }
+  
+    /* Adjust the size of the grid elements in the portfolio */
+    .grid-container .grid-element {
+      font-size: 0.8rem;
+    }
+  
+    /* Adjust the font size of the about text */
+    #about-content-container p {
+      font-size: 16px;
+    }
+  
+  }
