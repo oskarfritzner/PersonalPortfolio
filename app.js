@@ -71,6 +71,8 @@ function goLeft() {
 
 //Linking page btns
 
+//Checking if github is good. 
+
 
 
 //DarkMode functions
