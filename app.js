@@ -152,7 +152,7 @@ function changeColourMode() {
             navItems[i].style.color = "blanchedalmond";
         };
         pageContainer.style.color = "blanchedalmond";
-        webPage.style.boxShadow = "0 0 30px blanchedalmond"
+        webPage.style.boxShadow = "0 0 30px blanchedalmond";
 
         for(let i = 0;i < gridItems.length; i++) {
             gridItems[i].style.boxShadow = "0 0 50px blanchedalmond";
@@ -172,6 +172,7 @@ function changeColourMode() {
             navItems[i].style.color = "black";
         };
         pageContainer.style.color = "black";
+        webPage.style.boxShadow = "0 0 30px black";
 
         for(let i = 0; i < gridItems.length; i++) {
             gridItems[i].style.boxShadow = "0 0 50px blanchedalmond";
