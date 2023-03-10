@@ -9,7 +9,53 @@ const about = document.getElementById("about-content-container");
 
 const navOptions = document.getElementsByClassName("navItem");
 
+//Navigation functions
+
 let counter = 0;
+
+//Press navlinks functions
+
+const navLinks = document.getElementsByClassName("nav-link");
+const homeBtn = document.getElementById("home-btn");
+const portfolioBtn = document.getElementById("portfolio-btn");
+const aboutBtn = document.getElementById("about-btn");
+
+function goToHome() {
+    homePage.style.display="block";
+    portfolio.style.display="none";
+    about.style.display="none";
+    navOptions[0].innerHTML = '<a class="chosenPage" class="nav-link">Home</a';
+    navOptions[1].innerHTML = '<a class="nav-link">Portfolio</a';
+    navOptions[2].innerHTML = '<a class="nav-link">About</a';
+    leftBtn.style.display="none";
+    rightBtn.style.display="block";
+    return counter = 0;
+}
+
+function goToPortfolio() {
+    homePage.style.display="none";
+    about.style.display="none";
+    portfolio.style.display="block";
+    navOptions[0].innerHTML = '<a class="nav-link">Home</a';
+    navOptions[1].innerHTML = '<a class="chosenPage" class="nav-link">Portfolio</a';
+    navOptions[2].innerHTML = '<a class="nav-link">About</a';
+    leftBtn.style.display = "block";
+    rightBtn.style.display = "block";
+    return counter = 1;
+}
+
+function goToAbout() {
+    homePage.style.display="none";
+    portfolio.style.display="none";
+    about.style.display="block";
+    navOptions[0].innerHTML = '<a class="nav-link">Home</a';
+    navOptions[1].innerHTML = '<a class="nav-link">Portfolio</a';
+    navOptions[2].innerHTML = '<a class="chosenPage" class="nav-link">About</a';
+    rightBtn.style.display = "none";
+    leftBtn.style.display ="block";
+    return counter = 2;
+}
+//Left and right functions
 
 function goRight() {
 
@@ -88,7 +134,6 @@ const navItems = document.getElementsByClassName("navItem");
 const webPage = document.getElementById("webpage");
 const gridItems = document.getElementsByClassName("grid-element");
 
-console.log(navItems);
 let darkModeOn = false;
 
 
@@ -135,3 +180,6 @@ function changeColourMode() {
 colourModeBtn.addEventListener("click", changeColourMode);
 rightBtn.addEventListener("click", goRight);
 leftBtn.addEventListener("click", goLeft);
+homeBtn.addEventListener("click", goToHome);
+portfolioBtn.addEventListener("click", goToPortfolio);
+aboutBtn.addEventListener("click", goToAbout);
