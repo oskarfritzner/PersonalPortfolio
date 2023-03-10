@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-holder form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contact-holder form input {
+    margin-top: 10px;
+    width: 300px;
+}
+
+#message-input {
+    margin-top: 10px;
+    padding: 0;
+    height: 20vh;
+}
+
+#submit-button {
+    padding: 0;
+    margin-top: 20px;
+    height: 30px;
+    background-color: blue;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+.contac
+
+.contact-holder :placeholder-shown {
+    text-align: left;
+    text-indent: 5px;
+    
+}
+
+#return-home-btn {
+    position: absolute;
+    top: 25px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: black;
+    color: blue;
+    border-radius: 5%;
+}
+
+#return-home-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#return-home-btn:hover {
+    cursor: pointer;
+    background-color: blue;
+    transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        font-size: 1.0rem;
+    }
+
+    footer {
+        display: none;
+    }
+}

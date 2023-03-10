@@ -126,6 +126,7 @@ function goLeft() {
 //Styling-btns
 const colourModeBtn = document.getElementById("colour-mode-btn");
 const contactBtn = document.getElementById("contact-btn");
+const contactLink = document.getElementById("contact-link");
 
 //Elements to style
 const pageContainer = document.getElementById("page-container");
@@ -145,6 +146,7 @@ function changeColourMode() {
         colourModeBtn.style.backgroundColor = "blanchedalmond";
         contactBtn.style.color = "black";
         contactBtn.style.backgroundColor = "blanchedalmond";
+        contactLink.style.color = "black";
         navBar.style.borderBottom = "1px solid blanchedalmond";
         for(let i = 0; i < navItems.length; i++) {
             navItems[i].style.color = "blanchedalmond";
@@ -164,6 +166,7 @@ function changeColourMode() {
         colourModeBtn.style.backgroundColor = "black";
         contactBtn.style.color = "white";
         contactBtn.style.backgroundColor = "black";
+        contactLink.style.color = "white";
         navBar.style.borderBottom = "1px solid black";
         for(let i = 0; i < navItems.length; i++) {
             navItems[i].style.color = "black";
