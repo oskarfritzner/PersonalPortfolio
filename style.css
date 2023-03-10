@@ -172,6 +172,7 @@ footer {
 }
 
 .grid-container {
+    background-color: red;
     height: 100%;
     width: 100%;
     display: grid;
@@ -313,7 +314,7 @@ footer {
   
     /* Adjust the size of the grid elements in the portfolio */
     .grid-container .grid-element {
-      font-size: 0.8rem;
+      font-size: 0.5rem;
     }
   
     /* Adjust the font size of the about text */
